@@ -26,10 +26,13 @@ param(
 [string]$ComputerName = "localhost",
 
 [Parameter(Mandatory=$true)]
+[ValidateSet(4624,4625,4634)]
 [int]$EventId,
 
-[int]$Newest = 5
+[ValidateRange(5,10)]
+[int]$Newest = 3
 )
+
 $Startzeit = Get-Date
 Write-Verbose -Message "Vom User wurden folgende Werte angegeben:"
 Write-Verbose -Message "EventID: $EventId"

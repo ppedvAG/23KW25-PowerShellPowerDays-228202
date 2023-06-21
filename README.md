@@ -54,5 +54,12 @@ In diesem angepassten Kurs kamen Themen aus folgenden Kursen vor:
 - PSProvider
 - Skriptsicherheit
 - Git
+- Scripting
+    - Simple Parameters
+    - Pflicht Parameter
+    - Parameter mit Default Werte
+    - Comment Based Help
+    - Verbose Ausgaben
+    - Validierung von Parametern
 
 
