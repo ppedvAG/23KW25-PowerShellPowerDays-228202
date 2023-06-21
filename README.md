@@ -53,5 +53,6 @@ In diesem angepassten Kurs kamen Themen aus folgenden Kursen vor:
 - Variablen 2
 - PSProvider
 - Skriptsicherheit
+- Git
 
 
