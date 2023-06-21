@@ -1,5 +1,5 @@
 # 23KW25-PowerShell
-
+![ppedv AG FirmenLogo](https://ppedv.de/microsoftexperte/Images/ppedvStartbild.png)
 Repository zum angepassten InHouse PowerShell Kurs der ppedv AG in der KalenderWoche 20
 In diesem angepassten Kurs kamen Themen aus folgenden Kursen vor:
 
@@ -42,5 +42,16 @@ In diesem angepassten Kurs kamen Themen aus folgenden Kursen vor:
     Out-File
     Out-Printer
     ```
+- PipeLine1
+- Export 
+- Import
+- Filtern
+- Aufzählen
+- Schleifen 
+- Verzweigungen
+- PipeLine2
+- Variablen 2
+- PSProvider
+- Skriptsicherheit
 
 
