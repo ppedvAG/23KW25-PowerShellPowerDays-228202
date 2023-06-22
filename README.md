@@ -61,5 +61,6 @@ In diesem angepassten Kurs kamen Themen aus folgenden Kursen vor:
     - Comment Based Help
     - Verbose Ausgaben
     - Validierung von Parametern
+    - Functions
 
 
