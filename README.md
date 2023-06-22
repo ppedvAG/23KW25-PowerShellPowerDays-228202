@@ -66,8 +66,11 @@ In diesem angepassten Kurs kamen Themen aus folgenden Kursen vor:
         - Modulmanifest
     - Advanced Parameter
     - cmdletBinding Attribut
+    - PipeLine Möglichkeiten
+    - Beginn / Process End
 - Fehlerbehandlung
     - Terminierende Fehler vs Nicht Terminierende FEhler
     - try / catch / finalley
+- WMI / CIM
 
 

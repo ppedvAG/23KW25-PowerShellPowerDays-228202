@@ -94,6 +94,9 @@ for($i = 1; $i -le $DirCount; $i++)
         New-Item -Path $subdir.FullName -Name $FileName -ItemType File
     }#>
 }
+
+Out-File -InputObject $Error -FilePath ($Path + "Error.txt") -Append
+
 }
 
 function Test-ParameterSet
@@ -112,4 +115,26 @@ param(
 [string]$Param3
 
 )
+}
+
+function Out-RandomColors
+{
+[cmdletBinding()]
+param(
+[Parameter(Mandatory=$true,ValueFromPipeLine=$true,ValueFromPipeLineByPropertyName=$true)]
+[string]$Name
+)
+Begin
+{
+    Write-Host -Object "Einmalig am Anfang" -ForegroundColor Black -BackgroundColor White
+}
+Process
+{
+    $colornr = Get-Random -Minimum 0 -Maximum 15
+    Write-Host -Object $Name -ForegroundColor $colornr
+}
+End
+{
+    Write-Host -Object "Einmalig am Schluss" -ForegroundColor Black -BackgroundColor White
+}
 }
