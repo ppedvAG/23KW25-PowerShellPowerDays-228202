@@ -62,5 +62,12 @@ In diesem angepassten Kurs kamen Themen aus folgenden Kursen vor:
     - Verbose Ausgaben
     - Validierung von Parametern
     - Functions
+    - SkriptModul
+        - Modulmanifest
+    - Advanced Parameter
+    - cmdletBinding Attribut
+- Fehlerbehandlung
+    - Terminierende Fehler vs Nicht Terminierende FEhler
+    - try / catch / finalley
 
 

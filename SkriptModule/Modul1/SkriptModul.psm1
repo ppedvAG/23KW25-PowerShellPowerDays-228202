@@ -55,8 +55,12 @@ if(Test-Path -Path ($Path + $Name))
     }
     else
     {
+        throw "Ordner bereits vorhanden, nutzen Sie den Paramter Force um den bestehenden Ordner zu überschreiben"
+        #Write-Error -Message "Ordner bereits vorhanden, nutzen Sie den Paramter Force um den bestehenden Ordner zu überschreiben" -ErrorAction Stop
+        <# ersetzen durch Fehlerhandling
         Write-Host -ForegroundColor Red -Object "Ordner bereits vorhanden, ziehen Sie in Betracht -Force zu verwenden"
         exit
+        #>
     }
 }
 
@@ -90,4 +94,22 @@ for($i = 1; $i -le $DirCount; $i++)
         New-Item -Path $subdir.FullName -Name $FileName -ItemType File
     }#>
 }
+}
+
+function Test-ParameterSet
+{
+[cmdletBinding(DefaultParameterSetName="Set1",PositionalBinding=$false)]
+param(
+[Parameter(Mandatory=$true,ParameterSetName="Set1")]
+[string]$Param1,
+
+[Parameter(Mandatory=$true,ParameterSetName="Set2")]
+[string]$Param2,
+
+
+[Parameter(Mandatory=$false,ParameterSetName="Set1")]
+[Parameter(Mandatory=$true,ParameterSetName="Set2")]
+[string]$Param3
+
+)
 }
